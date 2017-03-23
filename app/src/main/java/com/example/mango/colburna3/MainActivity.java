@@ -29,7 +29,17 @@ public class MainActivity extends AppCompatActivity {
         mesaCollegeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent thisIntent = new Intent(MainActivity.this, MesaCollegeWebpageActivity.class);
+                Intent thisIntent = new Intent(MainActivity.this, WebpageViewerActivity.class);
+                thisIntent.putExtra("url", "https://www.sdmesa.edu");
+                startActivity(thisIntent);
+            }
+        });
+
+        googleButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent thisIntent = new Intent (MainActivity.this, WebpageViewerActivity.class);
+                thisIntent.putExtra("url", "https://www.google.com");
                 startActivity(thisIntent);
             }
         });
