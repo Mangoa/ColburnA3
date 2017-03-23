@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ColburnA3</string>
+    <string name="mesa_college_text">Mesa College</string>
+    <string name="mesa_college_go_button">GO</string>
+    <string name="google_text">Google</string>
+    <string name="google_go_button">GO</string>
+    <string name="select_website_prompt">Please choose a website\n</string>
+
 </resources>
